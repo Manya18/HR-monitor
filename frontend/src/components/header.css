@@ -1,0 +1,25 @@
+.Header{
+    background-color: var(--main-white);
+    color: var(--primary-text-color);
+    padding: 27px 52px 0;
+}
+.Header-title{
+    font-size: 32px;
+    margin-bottom: 26px;
+    font-weight: 400;
+}
+.Header-tabSelector{
+    display: flex;
+    align-items: center;
+    gap: 97px;
+}
+.Header-tabSelector-tab{
+    font-size: 24px;
+    padding-bottom: 15px;
+
+    &.selected{
+        font-weight: 500;
+        color: var(--main-red);
+        border-bottom: 3px solid var(--main-red);
+    }
+}

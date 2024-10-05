@@ -1,0 +1,23 @@
+.CandidatesPage{
+    background-color: var(--primary-background-color);
+}
+.CandidatesPage-wrapper{
+    background-color: var(--main-white);
+    margin: 38px 26px;
+}
+.CandidatesPage-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-bottom: 2px solid rgba(149, 66, 66, 0.5);
+}
+.CandidatesPage-header-title{
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--main-red);
+}
+.CandidatesPage-content-table-head{
+    background-color: var(--primary-background-color);
+    font-size: 20px;
+    font-weight: 500;
+}
