@@ -1,0 +1,65 @@
+.TaskView-title {
+  font-size: 24px;
+  padding: 0px 0px 10px;
+  align-items: center;
+}
+.TaskView-content-columns {
+  display: flex;
+  gap: 40px;
+  font-size: 16px;
+  margin: 20px 0;
+}
+.TaskView-content-vacancy,
+.TaskView-content-candidates {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.TaskView-textfield {
+  padding: 5px;
+}
+.TaskView-content-vacancy-title,
+.TaskView-content-candidates-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.TaskView-content-commonInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.TaskView-content-commonInfo-title {
+  text-align: center;
+}
+.TaskView-btnGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.TaskView-btnGroup-dropdown {
+  position: relative;
+}
+.TaskView-btnGroup-dropdown-menu {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc; 
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  margin-top: -30px;
+  transform: translateY(-100%);
+  z-index: 1000;
+  list-style-type: none;
+  padding: 0;
+}
+.TaskView-btnGroup-dropdown-menu li {
+  padding: 10px; /* Отступы для элементов списка */
+  cursor: pointer; /* Курсор при наведении на элементы списка */
+}
+
+.TaskView-btnGroup-dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Цвет фона при наведении на элемент списка */
+}

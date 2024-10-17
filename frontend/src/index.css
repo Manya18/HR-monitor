@@ -1,35 +1,137 @@
-:root{
+:root {
   --main-red: #954242;
+  --main-red-transparent: rgba(149, 66, 66, 0.5);
   --main-white: #ffffff;
-  --primary-background-color: #E5E7EB;
+  --primary-background-color: #e5e7eb;
   --primary-text-color: #000000;
 }
 
-body {
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"),
+    url("./lib/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: local("Montserrat Medium"),
+    url("./lib/fonts/Montserrat/Montserrat-Medium.ttf") format("ttf");
+}
+
+html,
+body,
+#root {
+  height: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-h1{
+h1 {
   margin: 0;
   padding: 0;
 }
 
-.red-button{
+button {
+  border: none;
+}
+
+.red-button {
   padding: 10px;
   background-color: var(--main-red);
   color: var(--main-white);
   font-size: 14px;
   font-weight: 500;
   border-radius: 13px;
+}
+
+.outlined-button {
+  padding: 10px;
+  background-color: transparent;
+  color: var(--main-red);
+  border: 1px solid var(--main-red);
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 13px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  border-bottom: 2px solid var(--main-red-transparent);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--main-red);
+}
+
+.page-content {
+  padding: 25px;
+}
+
+.page-filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.content-table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 10px;
+}
+
+.content-table th {
+  background-color: var(--primary-background-color);
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.content-table th,
+.content-table td {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+
+.content-table-rows {
+  border: 1px solid var(--main-red-transparent);
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f9f9fb;
+  }
+}
+
+.priority-circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.priority-high {
+  background-color: #FF0000;
+}
+
+.priority-average {
+  background-color: #FAFF00;
+}
+
+.priority-low {
+  background-color: #00E0FF;
 }

@@ -1,12 +1,10 @@
+import { VacanciesType } from "./VacanciesType"
+
 export type CandidateType = {
-    name: string,
-    surname: string,
+    fio: string,
     phone: string,
-    level: string,
-    resume: string,
-    source: string,
-    status: string
-    vacancies: string[],
+    status: string,
+    description: string,
+    vacancies: VacanciesType[],
     responsible: string,
-    date: string
 }

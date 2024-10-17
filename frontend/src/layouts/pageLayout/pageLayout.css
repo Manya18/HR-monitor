@@ -1,0 +1,10 @@
+.PageLayout{
+    min-height: 100%;
+    background-color: var(--primary-background-color);
+
+}
+.PageLayout-content{
+    background-color: var(--main-white);
+    margin: 38px 26px;
+    flex-grow: 1;
+}

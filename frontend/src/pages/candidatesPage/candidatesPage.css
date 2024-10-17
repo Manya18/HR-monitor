@@ -1,0 +1,16 @@
+.CandidatesPage-responsible {
+    display: flex;
+    align-items: center;
+}
+
+.status-accepted {
+    color: #009F10;
+}
+
+.status-rejected {
+    color: #CB0000;
+}
+
+.status-default {
+    color: #000;
+}

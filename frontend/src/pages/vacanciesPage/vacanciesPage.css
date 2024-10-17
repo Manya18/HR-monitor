@@ -1,0 +1,45 @@
+.vacancies-title {
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.vacancies-division {
+    font-size: 16px;
+}
+
+.candidates-value {
+    display: flex;
+    align-items: center;
+}
+
+.status-block {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.status-open {
+    background-color: #CDF7CC;
+    color: #2D5B2C;
+}
+
+.status-closed {
+    background-color: #CCF7F7;
+    color: #2C2E5B;
+}
+
+.status-cancelled {
+    background-color: #F7CCCC;
+    color: #5B2C2C;
+}
+#VacanciesPage-datetime{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.VacanciesPage-centeredFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
